@@ -2,314 +2,113 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Día 1 · ¿Qué es Copilot? | Centro de Comando IA - 2026</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Día 1: ¿Qué es Copilot?</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0F172A; color: white; }
-        
-        /* Animaciones */
-        .slide-in { animation: slideIn 0.8s ease-out forwards; opacity: 0; transform: translateY(30px); }
-        .delay-100 { animation-delay: 0.1s; }
-        .delay-200 { animation-delay: 0.2s; }
-        .delay-300 { animation-delay: 0.3s; }
-        
-        @keyframes slideIn { to { opacity: 1; transform: translateY(0); } }
-
-        /* Estilos Digitales / Neon */
-        .glass-panel {
-            background: rgba(30, 41, 59, 0.7);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-        }
-        .neon-text-cyan { text-shadow: 0 0 10px rgba(6, 182, 212, 0.5); }
-        
-        /* Grid de fondo Cyber */
-        .cyber-grid {
-            background-image: linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
-            background-size: 40px 40px;
-            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-        }
-
-        .chart-wrapper { position: relative; height: 250px; width: 100%; }
-    </style>
 </head>
-<body class="flex flex-col min-h-screen overflow-x-hidden">
 
-    <!-- Fondo Tecnológico -->
-    <div class="fixed inset-0 cyber-grid z-0 pointer-events-none"></div>
+<body class="bg-slate-950 text-slate-200 font-sans">
 
-    <!-- Header Flotante Oscuro -->
-    <header class="glass-panel py-4 px-6 fixed w-full z-50 flex justify-between items-center shadow-lg border-b border-slate-700">
-        <a href="index.html" class="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <div class="bg-blue-600 text-white p-1.5 rounded font-black text-xl tracking-tighter shadow-[0_0_15px_rgba(37,99,235,0.5)]">PRISMA</div>
-            <div class="h-6 w-px bg-slate-600"></div>
-            <span class="text-sm font-bold text-slate-300 uppercase tracking-wider">Academia Copilot</span>
-        </a>
-        <div class="flex items-center gap-3">
-            <span class="hidden md:inline text-xs text-slate-400 font-mono">SYSTEM: ONLINE</span>
-            <div class="bg-cyan-500/20 text-cyan-400 px-4 py-1.5 rounded-full text-xs font-bold border border-cyan-500/30 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span>
-                Día 1 / 20
+    <!-- Header -->
+    <header class="border-b border-slate-800 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <!-- Logo -->
+                <img src="PRISMA_LOGO_Azul.png" alt="PRISMA" class="h-8 opacity-95">
+                <div>
+                    <div class="text-sm font-bold text-slate-300 uppercase tracking-wider">
+                        Centro de Comando IA
+                    </div>
+                    <div class="text-xs text-slate-500">
+                        Programa 2026
+                    </div>
+                </div>
             </div>
+
+            <nav class="text-sm text-slate-400">
+                Día 1 de 7
+            </nav>
         </div>
     </header>
 
-    <div class="h-24"></div>
+    <!-- Main -->
+    <main class="max-w-3xl mx-auto px-6 py-12">
 
-    <main class="flex-1 w-full max-w-6xl mx-auto p-6 space-y-16 relative z-10">
-        
-        <!-- HERO SECTION -->
-        <section class="text-center space-y-8 slide-in">
-            <div class="relative inline-block group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-lg blur opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                <span class="relative inline-block bg-slate-900 text-cyan-300 px-6 py-2 rounded-lg text-sm font-bold uppercase tracking-[0.3em] border border-cyan-500/30">
-                    DÍA 1
-                </span>
+        <!-- Title -->
+        <h1 class="text-3xl font-extrabold mb-4">
+            Día 1 – ¿Qué es Copilot realmente?
+        </h1>
+
+        <p class="text-slate-400 mb-8">
+            Antes de aprender a usar inteligencia artificial, es clave entender
+            <strong>qué es y qué no es</strong>.
+        </p>
+
+        <!-- Explanation -->
+        <section class="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-8">
+            <p class="mb-4">
+                Copilot <strong>no es un buscador como Google</strong>, es un
+                <strong>asistente de trabajo</strong>.
+            </p>
+
+            <p class="mb-4">
+                Piensa en él como un pasante digital muy informado que
+                necesita instrucciones claras para darte buenos resultados.
+            </p>
+
+            <div class="bg-slate-800 rounded-lg p-4 text-sm text-slate-300">
+                🕒 <strong>Ejemplo real:</strong><br>
+                Una tarea que te toma 25 minutos, con una buena instrucción,
+                puede resolverse en 3 minutos.
             </div>
-            
-            <h1 class="text-5xl md:text-8xl font-extrabold tracking-tighter leading-none">
-                <span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-400">¿QUÉ ES</span> <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 neon-text-cyan">COPILOT?</span>
-            </h1>
-            
-            <p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto font-light">
-                Entendiendo a tu nuevo asistente creativo.
+        </section>
+
+        <!-- Action -->
+        <section class="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-10">
+            <h2 class="text-xl font-bold mb-4">🎯 Acción del día</h2>
+
+            <p class="mb-4">
+                Abre Copilot (o ChatGPT) y escribe exactamente este mensaje:
+            </p>
+
+            <div class="relative">
+                <pre id="prompt"
+class="bg-slate-800 rounded-lg p-4 text-sm text-slate-200 overflow-x-auto">
+Explícame con ejemplos prácticos cómo podrías ayudarme en mi trabajo diario.
+                </pre>
+
+                <button onclick="copiarPrompt()"
+                    class="absolute top-2 right-2 text-xs bg-slate-700 hover:bg-slate-600 px-3 py-1 rounded">
+                    Copiar
+                </button>
+            </div>
+
+            <p class="text-sm text-slate-400 text-center mt-4">
+                Este primer mensaje es solo para conocer cómo te puede ayudar.
+                No hay respuestas correctas o incorrectas.
             </p>
         </section>
 
-        <!-- SECCIÓN VISUAL: ANALOGÍA Y GRÁFICO (Restaurado) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 slide-in delay-100">
-            
-            <!-- Tarjeta 1: La Analogía -->
-            <div class="glass-panel rounded-3xl p-8 hover:border-cyan-500/50 transition-colors group flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center gap-3 mb-6">
-                        <span class="text-4xl">🧠</span>
-                        <h2 class="text-2xl font-bold text-white">El "Pasante Digital"</h2>
-                    </div>
-                    <p class="text-slate-300 leading-relaxed mb-6">
-                        "Copilot no es un buscador como Google, es un <strong>asistente creativo</strong>. Imagina que es un pasante muy inteligente que ha leído casi todo en internet, pero que a veces necesita instrucciones claras."
-                    </p>
-                    
-                    <div class="space-y-3">
-                        <div class="flex items-center p-3 bg-red-500/10 rounded-xl border border-red-500/20">
-                            <div class="font-bold text-red-400 mr-3 text-xl">✕</div>
-                            <div class="text-sm text-slate-300">Google: Te da 10 enlaces.</div>
-                        </div>
-                        <div class="flex items-center p-3 bg-green-500/10 rounded-xl border border-green-500/20">
-                            <div class="font-bold text-green-400 mr-3 text-xl">✓</div>
-                            <div class="text-sm text-slate-300">Copilot: Te escribe un resumen.</div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Navigation -->
+        <div class="flex justify-between items-center text-sm">
+            <span class="text-slate-600">Inicio</span>
+
+            <div class="text-slate-600 opacity-40 cursor-not-allowed">
+                Día 2 · La Regla de Oro (disponible mañana)
             </div>
-
-            <!-- Tarjeta 2: Gráfico de Eficiencia (Restaurado) -->
-            <div class="glass-panel rounded-3xl p-8 flex flex-col hover:border-blue-500/50 transition-colors">
-                <div class="mb-6 flex justify-between items-end">
-                    <div>
-                        <h2 class="text-2xl font-bold text-white">Ahorro de Tiempo</h2>
-                        <p class="text-xs font-mono text-cyan-400">SÍNTESIS DE INFORMACIÓN</p>
-                    </div>
-                    <div class="animate-pulse w-3 h-3 bg-cyan-500 rounded-full"></div>
-                </div>
-                
-                <div class="flex-1 relative flex items-center justify-center">
-                    <div class="chart-wrapper">
-                        <canvas id="efficiencyChart"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- INTERFAZ DE COMANDO (La Acción) -->
-        <section class="slide-in delay-200">
-            <div class="glass-panel rounded-[2rem] p-1 border border-slate-600 relative overflow-hidden">
-                <!-- Barra superior -->
-                <div class="bg-slate-900/80 px-6 py-3 flex items-center gap-2 border-b border-slate-700">
-                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                    <div class="ml-4 bg-slate-800 px-3 py-1 rounded text-[10px] font-mono text-slate-400 flex-1 text-center">
-                        teams_chat_init.exe
-                    </div>
-                </div>
-
-                <div class="flex flex-col md:flex-row">
-                    <!-- Panel Izquierdo -->
-                    <div class="w-full md:w-1/3 bg-slate-800/50 p-8 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-700">
-                        <img src="https://placehold.co/300x300/0f172a/22d3ee/png?text=ICONO+TEAMS&font=roboto" 
-                             class="w-32 h-32 mb-6 relative z-10 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]" alt="Teams">
-                        <h3 class="text-xl font-bold text-white text-center">Acción del Día</h3>
-                        <p class="text-sm text-slate-400 text-center mt-2">
-                            Entra a Teams -> Chat -> Copilot y salúdalo:
-                        </p>
-                    </div>
-
-                    <!-- Panel Derecho: Prompt -->
-                    <div class="w-full md:w-2/3 p-8 md:p-12 flex flex-col justify-center relative">
-                        <div class="absolute inset-0 bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] z-0 pointer-events-none bg-[length:100%_4px,6px_100%]"></div>
-                        
-                        <div class="relative z-10">
-                            <label class="text-xs font-mono text-cyan-400 mb-2 block">> INPUT COMMAND:</label>
-                            <p class="text-xl md:text-2xl font-mono text-white leading-relaxed mb-8">
-                                "Hola, ¿en qué 3 cosas específicas puedes ayudarme hoy en mi oficina?"
-                            </p>
-                            
-                            <button onclick="copyPrompt(this)" class="group relative w-full overflow-hidden rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 p-px font-bold text-white shadow-[0_0_20px_rgba(6,182,212,0.3)] transition-all hover:shadow-[0_0_30px_rgba(6,182,212,0.6)]">
-                                <div class="relative flex items-center justify-center gap-2 bg-slate-900/10 px-6 py-4 transition-all group-hover:bg-transparent">
-                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
-                                    <span>COPIAR SALUDO</span>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Navegación Footer -->
-        <div class="flex justify-between items-center pb-8 pt-4 slide-in delay-300 border-t border-slate-800">
-             <a href="index.html" class="group flex items-center gap-3 text-slate-500 hover:text-white transition-colors">
-                <div class="w-10 h-10 rounded-full border border-slate-600 flex items-center justify-center group-hover:border-white group-hover:bg-slate-800 transition-all">←</div>
-                <div class="text-left">
-                    <div class="text-[10px] uppercase tracking-wider">Volver</div>
-                    <div class="font-bold">Inicio</div>
-                </div>
-            </a>
-             <a href="dia2.html" class="group flex items-center gap-3 text-slate-500 hover:text-white transition-colors">
-                <div class="text-right">
-                    <div class="text-[10px] uppercase tracking-wider">Siguiente</div>
-                    <div class="font-bold">Día 2</div>
-                </div>
-                <div class="w-10 h-10 rounded-full border border-slate-600 flex items-center justify-center group-hover:border-white group-hover:bg-slate-800 transition-all">→</div>
-            </a>
         </div>
 
     </main>
 
+    <!-- Script -->
     <script>
-        // Configuración Gráfico de Barras Dark Mode
-        const ctx = document.getElementById('efficiencyChart').getContext('2d');
-        
-        // Gradientes
-        const gradientBar1 = ctx.createLinearGradient(0, 0, 0, 400);
-        gradientBar1.addColorStop(0, '#94A3B8');
-        gradientBar1.addColorStop(1, '#475569'); // Slate
-
-        const gradientBar2 = ctx.createLinearGradient(0, 0, 0, 400);
-        gradientBar2.addColorStop(0, '#22D3EE'); // Cyan
-        gradientBar2.addColorStop(1, '#0EA5E9'); // Sky Blue
-
-        function wrapLabel(str, maxLen = 15) {
-            const words = str.split(' ');
-            const lines = [];
-            let currentLine = words[0];
-            for (let i = 1; i < words.length; i++) {
-                if (currentLine.length + 1 + words[i].length <= maxLen) {
-                    currentLine += " " + words[i];
-                } else {
-                    lines.push(currentLine);
-                    currentLine = words[i];
-                }
-            }
-            lines.push(currentLine);
-            return lines;
-        }
-
-        const labels = ['Búsqueda Manual', 'Síntesis Copilot'];
-        const wrappedLabels = labels.map(l => wrapLabel(l));
-
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: wrappedLabels,
-                datasets: [{
-                    label: 'Minutos',
-                    data: [25, 3],
-                    backgroundColor: [gradientBar1, gradientBar2],
-                    borderRadius: 8,
-                    barThickness: 60,
-                    borderWidth: 0
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: { display: false },
-                    tooltip: {
-                        backgroundColor: 'rgba(15, 23, 42, 0.9)',
-                        titleColor: '#fff',
-                        bodyColor: '#cbd5e1',
-                        padding: 12,
-                        cornerRadius: 8,
-                        displayColors: false,
-                        callbacks: {
-                            title: function(tooltipItems) {
-                                const item = tooltipItems[0];
-                                const label = item.chart.data.labels[item.dataIndex];
-                                return Array.isArray(label) ? label.join(' ') : label;
-                            },
-                            label: function(context) {
-                                return context.raw + ' minutos';
-                            }
-                        }
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        grid: { color: 'rgba(255, 255, 255, 0.05)' },
-                        ticks: { color: '#94A3B8' }
-                    },
-                    x: {
-                        grid: { display: false },
-                        ticks: {
-                            font: { family: "'Plus Jakarta Sans', sans-serif", weight: 'bold' },
-                            color: '#CBD5E1'
-                        }
-                    }
-                },
-                animation: { duration: 1500, easing: 'easeOutQuart' }
-            }
-        });
-
-        // Función de copiado con feedback visual
-        function copyPrompt(btn) {
-            const promptText = "Hola, ¿en qué 3 cosas específicas puedes ayudarme hoy en mi oficina?";
-            
-            const el = document.createElement('textarea');
-            el.value = promptText;
-            document.body.appendChild(el);
-            el.select();
-            document.execCommand('copy');
-            document.body.removeChild(el);
-
-            // Efecto visual en el botón
-            const contentDiv = btn.querySelector('div');
-            const originalHTML = contentDiv.innerHTML;
-            
-            contentDiv.classList.remove('bg-slate-900/10');
-            contentDiv.classList.add('bg-green-500', 'text-white');
-            contentDiv.innerHTML = `
-                <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span>¡COPIADO!</span>
-            `;
-
-            setTimeout(() => {
-                contentDiv.innerHTML = originalHTML;
-                contentDiv.classList.add('bg-slate-900/10');
-                contentDiv.classList.remove('bg-green-500', 'text-white');
-            }, 2500);
+        function copiarPrompt() {
+            const texto = document.getElementById("prompt").innerText;
+            navigator.clipboard.writeText(texto).then(() => {
+                alert("Prompt copiado ✔️");
+            });
         }
     </script>
+
 </body>
-
 </html>
-
