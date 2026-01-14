@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Restringido - Prisma IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0F172A; color: white; }
+        
+        /* Animaciones */
+        .pulse-red { animation: pulseRed 2s infinite; }
+        .slide-up { animation: slideUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
+        
+        @keyframes pulseRed {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+            70% { box-shadow: 0 0 0 20px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+        @keyframes slideUp { to { opacity: 1; transform: translateY(0); } }
+
+        /* Estilos Cyber */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .cyber-grid {
+            background-image: linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen overflow-hidden justify-center items-center relative">
+
+    <!-- Fondo Tecnológico -->
+    <div class="fixed inset-0 cyber-grid z-0 pointer-events-none"></div>
+
+    <!-- Header Flotante (Solo Logo) -->
+    <div class="absolute top-0 left-0 w-full p-6 z-50">
+        <a href="index_curso_ia.html" class="inline-flex items-center space-x-3 opacity-80 hover:opacity-100 transition-opacity">
+            <div class="bg-blue-600 text-white p-1.5 rounded font-black text-xl tracking-tighter">PRISMA</div>
+            <div class="h-6 w-px bg-slate-600"></div>
+            <span class="text-sm font-bold text-slate-300 uppercase tracking-wider">Academia Copilot</span>
+        </a>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main class="relative z-10 max-w-lg w-full p-6 text-center slide-up">
+        
+        <!-- Icono de Candado con Animación -->
+        <div class="relative inline-block mb-8">
+            <div class="absolute inset-0 bg-red-500 blur-2xl opacity-20 rounded-full animate-pulse"></div>
+            <div class="relative bg-slate-900 border border-red-500/30 w-32 h-32 rounded-full flex items-center justify-center pulse-red mx-auto">
+                <span class="text-6xl">🔒</span>
+            </div>
+            <!-- Etiqueta Flotante -->
+            <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-red-900/80 border border-red-500 text-red-200 text-[10px] font-mono font-bold px-3 py-1 rounded-full uppercase tracking-widest whitespace-nowrap">
+                Access Denied
+            </div>
+        </div>
+
+        <!-- Texto -->
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
+            Módulo Bloqueado
+        </h1>
+        <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+            Este contenido aún no está disponible. <br>
+            La capacitación se libera progresivamente día a día.
+        </p>
+
+        <!-- Tarjeta de Estado -->
+        <div class="glass-panel rounded-2xl p-6 mb-8 border-l-4 border-slate-500 text-left flex items-center gap-4">
+            <div class="bg-slate-800 p-3 rounded-lg">
+                <span class="text-2xl">⏳</span>
+            </div>
+            <div>
+                <h3 class="text-sm font-bold text-white uppercase tracking-wider">Disponibilidad</h3>
+                <p class="text-xs text-slate-300 font-mono mt-1">ESTIMADA: MAÑANA A LAS 09:00 AM</p>
+            </div>
+        </div>
+
+        <!-- Botón de Regreso -->
+        <a href="index_curso_ia.html" class="group relative inline-flex items-center justify-center gap-2 w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-4 px-6 rounded-xl transition-all border border-slate-600 hover:border-slate-400">
+            <span>VOLVER AL CENTRO DE COMANDO</span>
+            <span class="group-hover:-translate-y-1 transition-transform">🚀</span>
+        </a>
+
+    </main>
+
+    <!-- Footer Simple -->
+    <footer class="absolute bottom-6 text-center w-full text-[10px] text-slate-600 font-mono">
+        SYSTEM_ID: LOCK_PROTOCOL_V2
+    </footer>
+
+</body>
+</html>
