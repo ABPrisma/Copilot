@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día 4 · El Contexto | Centro de Capacitación en IA 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0F172A; color: white; }
+        
+        /* Animaciones */
+        .slide-in { animation: slideIn 0.8s ease-out forwards; opacity: 0; transform: translateY(30px); }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        
+        @keyframes slideIn { to { opacity: 1; transform: translateY(0); } }
+
+        /* Estilos Digitales */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+        .neon-text-pink { text-shadow: 0 0 15px rgba(236, 72, 153, 0.6); }
+        
+        .cyber-grid {
+            background-image: linear-gradient(rgba(236, 72, 153, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(236, 72, 153, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen overflow-x-hidden">
+
+    <div class="fixed inset-0 cyber-grid z-0 pointer-events-none"></div>
+
+    <header class="glass-panel py-4 px-6 fixed w-full z-50 flex justify-between items-center shadow-lg border-b border-slate-700">
+        <a href="index.html" class="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+            <div><img src="PRISMA_LOGO_Azul.png" alt="PRISMA" class="h-8 opacity-95"></div>
+            <div class="h-6 w-px bg-slate-600"></div>
+            <span class="text-sm font-bold text-slate-300 uppercase tracking-wider">Centro de Capacitación en IA</span>
+        </a>
+        <div class="flex items-center gap-3">
+            <span class="hidden md:inline text-xs text-slate-400 font-mono">MODULE: PROMPTING_L2</span>
+            <div class="bg-pink-600/20 text-pink-400 px-4 py-1.5 rounded-full text-xs font-bold border border-pink-500/30 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-pink-500 animate-pulse"></span>
+                Día 4 / 20
+            </div>
+        </div>
+    </header>
+
+    <div class="h-24"></div>
+
+    <main class="flex-1 w-full max-w-6xl mx-auto p-6 space-y-16 relative z-10">
+        
+        <section class="text-center space-y-8 slide-in">
+            <div class="relative inline-block group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-pink-600 to-rose-600 rounded-lg blur opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                <span class="relative inline-block bg-slate-900 text-pink-300 px-6 py-2 rounded-lg text-sm font-bold uppercase tracking-[0.3em] border border-pink-500/30">
+                    DÍA 4
+                </span>
+            </div>
+            <p class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.4em]">El Secreto del Prompt · Parte 2</p>
+            <h1 class="font-extrabold tracking-tighter leading-none text-white">
+                
+                             
+                <span class="block text-5xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-fuchsia-500 to-rose-500 neon-text-pink mt-4">
+                    EL PODER DEL CONTEXTO
+                </span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto font-light">
+                Copilot no lee tu mente, solo lee tu prompt. <br>
+                <span class="text-pink-400 font-semibold">Dile el "Para qué", el "Para quién" y el "Dónde".</span>
+            </p>
+        </section>
+
+        <section class="slide-in delay-100">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                
+                <div class="glass-panel p-8 rounded-3xl border-l-4 border-pink-500 flex flex-col justify-center">
+                    <h2 class="text-2xl font-bold text-white mb-4">La Teoría del Enfoque 🎯</h2>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        Imagina que pides "Una foto de un perro". Te pueden dar un chihuahua o un gran danés.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        En el trabajo es igual. Si pides "Escribe un correo", Copilot escribirá algo genérico. Pero si le das el <strong>Contexto</strong>, la respuesta pasa de ser "borrosa" a ser "Alta Definición".
+                    </p>
+                    
+                    <div class="mt-6 grid grid-cols-3 gap-2 text-center">
+                        <div class="bg-slate-800 p-2 rounded-lg border border-slate-700">
+                            <div class="text-lg">👥</div>
+                            <div class="text-[10px] text-pink-300 font-bold mt-1">¿A QUIÉN?</div>
+                            <div class="text-[9px] text-slate-500">Audiencia</div>
+                        </div>
+                        <div class="bg-slate-800 p-2 rounded-lg border border-slate-700">
+                            <div class="text-lg">🎯</div>
+                            <div class="text-[10px] text-pink-300 font-bold mt-1">¿PARA QUÉ?</div>
+                            <div class="text-[9px] text-slate-500">Objetivo</div>
+                        </div>
+                        <div class="bg-slate-800 p-2 rounded-lg border border-slate-700">
+                            <div class="text-lg">📺</div>
+                            <div class="text-[10px] text-pink-300 font-bold mt-1">¿DÓNDE?</div>
+                            <div class="text-[9px] text-slate-500">Formato</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="glass-panel p-5 rounded-xl border border-slate-700 opacity-50 blur-[1px] hover:blur-0 transition-all duration-500">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center">☁️</div>
+                            <span class="text-xs font-mono text-slate-400">SIN CONTEXTO:</span>
+                        </div>
+                        <p class="text-slate-400 text-sm">"Dame ideas para un evento de fin de año."</p>
+                        <div class="mt-2 text-xs bg-slate-800 p-2 rounded text-slate-500">
+                            ↳ Copilot: "Fiesta de disfraces, cena elegante..." (Muy genérico).
+                        </div>
+                    </div>
+
+                    <div class="glass-panel p-5 rounded-xl border border-pink-500/50 bg-pink-900/10 relative shadow-[0_0_30px_rgba(236,72,153,0.1)]">
+                        <div class="absolute -right-2 -top-2 bg-pink-500 text-white text-[10px] font-bold px-2 py-1 rounded shadow-lg animate-pulse">HD</div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-8 h-8 rounded-full bg-pink-600 flex items-center justify-center">🎯</div>
+                            <span class="text-xs font-mono text-pink-300">CON CONTEXTO:</span>
+                        </div>
+                        <p class="text-white text-sm font-medium leading-relaxed">
+                            "Dame ideas para un evento de fin de año <span class="text-pink-400">para un equipo de ingenieros introvertidos</span>, que sea <span class="text-pink-400">en horario laboral</span> y que <span class="text-pink-400">fomente el trabajo en equipo sin ser incómodo</span>."
+                        </p>
+                        <div class="mt-2 text-xs bg-slate-900 p-2 rounded text-pink-200 border border-pink-500/20">
+                            ↳ Copilot: "Torneo de videojuegos retro, Escape Room, Cata de vinos guiada..."
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="slide-in delay-200">
+            <div class="glass-panel rounded-2xl p-1 border border-pink-600/30 relative overflow-hidden">
+                <div class="bg-slate-900/95 p-8 md:p-12 text-center rounded-xl relative z-10">
+                    
+                    <div class="w-16 h-16 bg-pink-500/20 text-pink-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 border border-pink-500/50 shadow-[0_0_20px_rgba(236,72,153,0.3)]">
+                        🚀
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-2">Misión: El Vendedor Preciso</h3>
+                    <p class="text-slate-400 mb-8 max-w-2xl mx-auto">
+                        Vamos a pedirle un plan de acción, pero dándole todos los detalles para que no pueda fallar.
+                    </p>
+
+                    <div class="max-w-3xl mx-auto relative text-left bg-slate-800/50 rounded-xl p-6 border border-slate-700">
+                        <p class="text-xs text-slate-500 font-mono mb-2 uppercase">Tu Prompt de Hoy:</p>
+                        
+                        <div class="bg-slate-900 p-4 rounded-lg border-l-4 border-pink-500 mb-4 text-sm text-slate-300 leading-relaxed">
+                            "Actúa como un experto en Bienestar Laboral. <br>
+                            Dame 3 ideas breves para reducir el estrés del equipo. <br>
+                            <strong class="text-pink-400">CONTEXTO:</strong> Somos un equipo de contadores en cierre de mes, trabajamos remoto y tenemos muy poco tiempo libre."
+                        </div>
+
+                        <button onclick="copyPrompt(this)" class="w-full group relative overflow-hidden rounded-xl bg-gradient-to-r from-pink-600 to-rose-600 p-px shadow-lg transition-all hover:shadow-pink-500/25">
+                            <div class="relative bg-slate-900 p-4 rounded-xl flex items-center justify-center gap-2 transition-all group-hover:bg-opacity-0 group-hover:text-white">
+                                <span class="font-bold text-sm uppercase tracking-wider">COPIAR PROMPT AL PORTAPAPELES</span>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-between items-center pb-8 pt-4 slide-in delay-300 border-t border-slate-800 mt-12">
+             <a href="dia3.html" class="group flex items-center gap-3 text-slate-500 hover:text-white transition-colors">
+                <div class="w-10 h-10 rounded-full border border-slate-600 flex items-center justify-center group-hover:border-white group-hover:bg-slate-800 transition-all">←</div>
+                <div class="text-left">
+                    <div class="text-[10px] uppercase tracking-wider">Volver</div>
+                    <div class="font-bold">Día 3</div>
+                </div>
+            </a>
+             <a href="index.html" class="group flex items-center gap-3 text-slate-500 hover:text-white transition-colors">
+                <div class="text-right">
+                    <div class="text-[10px] uppercase tracking-wider">Menú</div>
+                    <div class="font-bold">Inicio</div>
+                </div>
+                <div class="w-10 h-10 rounded-full border border-slate-600 flex items-center justify-center group-hover:border-white group-hover:bg-slate-800 transition-all">🏠</div>
+            </a>
+        </div>
+
+    </main>
+
+    <script>
+        function copyPrompt(btn) {
+            const promptText = "Actúa como un experto en Bienestar Laboral. Dame 3 ideas breves para reducir el estrés del equipo. CONTEXTO: Somos un equipo de contadores en cierre de mes, trabajamos remoto y tenemos muy poco tiempo libre.";
+            
+            const el = document.createElement('textarea');
+            el.value = promptText;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+
+            const contentDiv = btn.querySelector('div');
+            const originalHTML = contentDiv.innerHTML;
+            
+            contentDiv.classList.remove('bg-slate-900');
+            contentDiv.classList.add('bg-green-500', 'text-white');
+            contentDiv.innerHTML = `
+                <span class="font-bold text-sm uppercase tracking-wider">¡LISTO! PEGAR EN TEAMS</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            `;
+
+            setTimeout(() => {
+                contentDiv.innerHTML = originalHTML;
+                contentDiv.classList.add('bg-slate-900');
+                contentDiv.classList.remove('bg-green-500', 'text-white');
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

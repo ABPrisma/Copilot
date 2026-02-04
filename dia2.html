@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Día 2: La Regla de Oro</title>
+    <title>Día 2 · La Regla de Oro | Centro de Capacitación en IA 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0F172A; color: white; }
@@ -18,42 +17,48 @@
         
         @keyframes slideIn { to { opacity: 1; transform: translateY(0); } }
 
-        /* Estilos Digitales / Neon */
+        /* Estilos Digitales */
         .glass-panel {
             background: rgba(30, 41, 59, 0.7);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
         }
-        .neon-text-pink { text-shadow: 0 0 10px rgba(236, 72, 153, 0.5); }
+        .neon-text-amber { text-shadow: 0 0 10px rgba(245, 158, 11, 0.5); }
         
-        /* Grid de fondo Cyber */
         .cyber-grid {
-            background-image: linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+            background-image: linear-gradient(rgba(245, 158, 11, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(245, 158, 11, 0.05) 1px, transparent 1px);
             background-size: 40px 40px;
             mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
         }
-        
-        .chart-wrapper { position: relative; height: 200px; width: 100%; display: flex; justify-content: center; }
+
+        /* Estilo Warning */
+        .warning-stripe {
+            background: repeating-linear-gradient(
+                45deg,
+                rgba(245, 158, 11, 0.1),
+                rgba(245, 158, 11, 0.1) 10px,
+                rgba(245, 158, 11, 0.05) 10px,
+                rgba(245, 158, 11, 0.05) 20px
+            );
+        }
     </style>
 </head>
 <body class="flex flex-col min-h-screen overflow-x-hidden">
 
-    <!-- Fondo Tecnológico -->
     <div class="fixed inset-0 cyber-grid z-0 pointer-events-none"></div>
 
-    <!-- Header Flotante Oscuro -->
     <header class="glass-panel py-4 px-6 fixed w-full z-50 flex justify-between items-center shadow-lg border-b border-slate-700">
-        <a href="index_curso_ia.html" class="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <div class="bg-blue-600 text-white p-1.5 rounded font-black text-xl tracking-tighter shadow-[0_0_15px_rgba(37,99,235,0.5)]">PRISMA</div>
+        <a href="index.html" class="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+            <div><img src="PRISMA_LOGO_Azul.png" alt="PRISMA" class="h-8 opacity-95"></div>
             <div class="h-6 w-px bg-slate-600"></div>
-            <span class="text-sm font-bold text-slate-300 uppercase tracking-wider">Academia Copilot</span>
+            <span class="text-sm font-bold text-slate-300 uppercase tracking-wider">Centro de Capacitación en IA</span>
         </a>
         <div class="flex items-center gap-3">
-            <span class="hidden md:inline text-xs text-slate-400 font-mono">SYSTEM: ONLINE</span>
-            <div class="bg-pink-500/20 text-pink-400 px-4 py-1.5 rounded-full text-xs font-bold border border-pink-500/30 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-pink-500 animate-pulse"></span>
+            <span class="hidden md:inline text-xs text-slate-400 font-mono">MODULE: SECURITY</span>
+            <div class="bg-amber-500/20 text-amber-400 px-4 py-1.5 rounded-full text-xs font-bold border border-amber-500/30 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
                 Día 2 / 20
             </div>
         </div>
@@ -63,190 +68,117 @@
 
     <main class="flex-1 w-full max-w-6xl mx-auto p-6 space-y-16 relative z-10">
         
-        <!-- HERO SECTION -->
         <section class="text-center space-y-8 slide-in">
             <div class="relative inline-block group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                <span class="relative inline-block bg-slate-900 text-pink-300 px-6 py-2 rounded-lg text-sm font-bold uppercase tracking-[0.3em] border border-pink-500/30">
+                <div class="absolute -inset-1 bg-gradient-to-r from-amber-500 to-orange-600 rounded-lg blur opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                <span class="relative inline-block bg-slate-900 text-amber-500 px-6 py-2 rounded-lg text-sm font-bold uppercase tracking-[0.3em] border border-amber-500/30">
                     DÍA 2
                 </span>
             </div>
             
-            <h1 class="text-5xl md:text-8xl font-extrabold tracking-tighter leading-none">
-                <span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-400">LA REGLA</span> <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 neon-text-pink">DE ORO</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-none">
+                LA REGLA <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 neon-text-amber">DE ORO</span>
             </h1>
             
             <p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto font-light">
-                <span class="text-white font-bold">Verificar siempre.</span>
+                Confía, pero verifica. La IA puede ser muy convincente incluso cuando se equivoca.
             </p>
         </section>
 
-        <!-- SECCIÓN VISUAL: CONCEPTO Y GRÁFICO -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 slide-in delay-100">
+        <section class="slide-in delay-100 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             
-            <!-- Tarjeta 1: Mensaje Clave + Imagen -->
-            <div class="glass-panel rounded-3xl p-0 overflow-hidden hover:border-pink-500/50 transition-colors group flex flex-col">
-                <div class="relative h-48 overflow-hidden shrink-0">
-                    <div class="absolute inset-0 bg-pink-900/20 group-hover:bg-pink-900/10 transition-colors z-10"></div>
-                    <img src="https://placehold.co/600x300/331D2C/EC4899/png?text=Concepto:+Error+de+Dato&font=roboto" 
-                         class="w-full h-full object-cover" alt="Error Concept">
-                </div>
-                <div class="p-8 flex-1 flex flex-col justify-center">
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="text-3xl">⚠️</span>
-                        <h2 class="text-2xl font-bold text-white">Mensaje Clave</h2>
-                    </div>
-                    <p class="text-slate-300 leading-relaxed">
-                        "La IA puede <strong class="text-pink-400">'alucinar'</strong> (inventar datos que suenan reales). Nunca copies y pegues un dato importante sin verificarlo. Tú eres el experto, Copilot es el redactor."
-                    </p>
-                </div>
+            <div class="glass-panel p-8 rounded-3xl border-l-4 border-amber-500 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10 text-9xl">⚠️</div>
+                <h2 class="text-2xl font-bold text-white mb-4">El Fenómeno de la "Alucinación"</h2>
+                <p class="text-slate-300 leading-relaxed mb-6">
+                    A veces, Copilot puede inventar datos que suenan totalmente reales. Esto se llama <strong>"Alucinación"</strong>.
+                </p>
+                <p class="text-slate-300 leading-relaxed border-t border-slate-700 pt-4">
+                    <span class="text-amber-400 font-bold">Recuerda:</span> Tú eres el experto, Copilot es solo el redactor rápido. Nunca copies y pegues un dato importante (cifras, leyes, fechas) sin verificar.
+                </p>
             </div>
 
-            <!-- Tarjeta 2: Gráfico Digital (Visualización de Alucinación) -->
-            <div class="glass-panel rounded-3xl p-8 flex flex-col hover:border-blue-500/50 transition-colors">
-                <div class="mb-6 flex justify-between items-end">
-                    <div>
-                        <h2 class="text-2xl font-bold text-white">Escáner de Confianza</h2>
-                        <p class="text-xs font-mono text-pink-400">ANÁLISIS DE RIESGO DE IA</p>
+            <div class="relative">
+                <div class="glass-panel p-6 rounded-2xl border border-red-500/30 mb-4 transform -rotate-2 opacity-80">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-xs font-mono text-red-400">🤖 RESPUESTA IA (EJEMPLO):</span>
                     </div>
-                    <div class="animate-pulse w-3 h-3 bg-green-500 rounded-full"></div>
-                </div>
-                
-                <div class="flex-1 relative flex items-center justify-center">
-                    <div class="chart-wrapper">
-                        <canvas id="hallucinationChart"></canvas>
-                        <!-- Texto central flotante sobre el gráfico -->
-                        <div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-                            <span class="text-3xl font-black text-white">90%</span>
-                            <span class="text-[9px] uppercase text-slate-400">Precisión</span>
-                        </div>
+                    <p class="text-slate-300 italic">"El artículo 543 de la Ley del Trabajo dice que es obligatorio dar pizza los viernes..."</p>
+                    <div class="absolute -right-2 -bottom-2 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                        ¡FALSO!
                     </div>
-                </div>
-                
-                <div class="mt-6 flex gap-4 text-xs font-mono justify-center">
-                    <div class="flex items-center gap-2">
-                        <span class="w-3 h-3 bg-blue-600 rounded"></span>
-                        <span class="text-slate-300">HECHOS</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="w-3 h-3 bg-pink-500 rounded"></span>
-                        <span class="text-slate-300">ALUCINACIONES</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- INTERFAZ DE COMANDO (El Tip/Prompt) -->
-        <section class="slide-in delay-200">
-            <div class="glass-panel rounded-[2rem] p-1 border border-slate-600 relative overflow-hidden">
-                <div class="bg-slate-900/80 px-6 py-3 flex items-center gap-2 border-b border-slate-700">
-                    <div class="w-3 h-3 rounded-full bg-red-500"></div><div class="w-3 h-3 rounded-full bg-yellow-500"></div><div class="w-3 h-3 rounded-full bg-green-500"></div>
-                    <div class="ml-4 bg-slate-800 px-3 py-1 rounded text-[10px] font-mono text-slate-400 flex-1 text-center">verify_source_code.exe</div>
                 </div>
 
-                <div class="flex flex-col md:flex-row">
-                    <!-- Panel Izquierdo -->
-                    <div class="w-full md:w-1/3 bg-slate-800/50 p-8 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-700">
-                        <img src="https://placehold.co/300x300/0f172a/EC4899/png?text=ICONO+LUPA&font=roboto" 
-                             class="w-32 h-32 mb-6 relative z-10 drop-shadow-[0_0_15px_rgba(236,72,153,0.5)]" alt="Shield">
-                        <h3 class="text-xl font-bold text-white text-center">Tip del Día</h3>
-                        <p class="text-sm text-slate-400 text-center mt-2">Si te da un dato dudoso, pídele:</p>
+                <div class="glass-panel p-6 rounded-2xl border border-green-500/30 transform rotate-1 bg-slate-800 relative z-10">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-xs font-mono text-green-400">👤 TU VERIFICACIÓN:</span>
                     </div>
-
-                    <!-- Panel Derecho: Prompt -->
-                    <div class="w-full md:w-2/3 p-8 md:p-12 flex flex-col justify-center relative">
-                        <div class="relative z-10">
-                            <label class="text-xs font-mono text-pink-400 mb-2 block">> INPUT COMMAND:</label>
-                            <p class="text-xl md:text-2xl font-mono text-white leading-relaxed mb-8">
-                                "¿Puedes darme la fuente o el enlace de donde sacaste esa información?"
-                            </p>
-                            
-                            <button onclick="copyPrompt(this)" class="group relative w-full overflow-hidden rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 p-px font-bold text-white shadow-[0_0_20px_rgba(236,72,153,0.3)] transition-all hover:shadow-[0_0_30px_rgba(236,72,153,0.6)]">
-                                <div class="relative flex items-center justify-center gap-2 bg-slate-900/10 px-6 py-4 transition-all group-hover:bg-transparent">
-                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                    <span>COPIAR COMANDO DE VERIFICACIÓN</span>
-                                </div>
-                            </button>
-                        </div>
+                    <p class="text-slate-300">"Espera, esa ley no existe. Copilot lo inventó porque sonaba bien."</p>
+                    <div class="mt-3 flex items-center gap-2 text-green-400 text-sm font-bold">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        ERROR EVITADO
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Navegación Footer -->
-        <div class="flex justify-between items-center pb-8 pt-4 slide-in delay-300 border-t border-slate-800">
+        <section class="slide-in delay-200">
+            <div class="glass-panel rounded-2xl p-1 border border-amber-600/30 relative overflow-hidden warning-stripe">
+                <div class="bg-slate-900/95 p-8 md:p-12 text-center rounded-xl relative z-10">
+                    
+                    <div class="w-16 h-16 bg-amber-500/20 text-amber-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 border border-amber-500/50">
+                        🕵️‍♂️
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-2">Misión: Detective de Datos</h3>
+                    <p class="text-slate-400 mb-8 max-w-2xl mx-auto">
+                        No le creas ciegamente. Vamos a pedirle un dato real y obligarlo a que nos muestre sus "papeles".
+                    </p>
+
+                    <div class="max-w-2xl mx-auto relative">
+                        <button onclick="copyPrompt(this)" class="w-full group relative overflow-hidden rounded-xl bg-slate-800 p-px transition-all hover:shadow-[0_0_30px_rgba(245,158,11,0.4)]">
+                            <div class="relative bg-slate-900/90 p-6 rounded-xl border border-amber-500/30 flex flex-col md:flex-row items-center gap-4 transition-all group-hover:bg-slate-800">
+                                
+                                <div class="flex-1 text-left font-mono text-sm md:text-base text-amber-100">
+                                    "Lista los días feriados restantes de este año en Perú y <span class="text-amber-400 font-bold">dame el enlace a la fuente oficial</span> de donde sacaste el dato."
+                                </div>
+                                
+                                <div class="bg-amber-600 text-white px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2 group-hover:bg-amber-500 transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                                    COPIAR
+                                </div>
+                            </div>
+                        </button>
+                        <p class="mt-3 text-xs text-slate-500">Pruébalo en Copilot y verifica si el enlace funciona.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-between items-center pb-8 pt-4 slide-in delay-300 border-t border-slate-800 mt-12">
              <a href="dia1.html" class="group flex items-center gap-3 text-slate-500 hover:text-white transition-colors">
                 <div class="w-10 h-10 rounded-full border border-slate-600 flex items-center justify-center group-hover:border-white group-hover:bg-slate-800 transition-all">←</div>
-                <div class="text-right">
-                    <div class="text-[10px] uppercase tracking-wider">Anterior</div>
+                <div class="text-left">
+                    <div class="text-[10px] uppercase tracking-wider">Volver</div>
                     <div class="font-bold">Día 1</div>
                 </div>
             </a>
-            <a href="dia3.html" class="group flex items-center gap-3 text-slate-500 hover:text-white transition-colors">
+             <a href="index.html" class="group flex items-center gap-3 text-slate-500 hover:text-white transition-colors">
                 <div class="text-right">
-                    <div class="text-[10px] uppercase tracking-wider">Siguiente</div>
-                    <div class="font-bold">Día 3</div>
+                    <div class="text-[10px] uppercase tracking-wider">Menú</div>
+                    <div class="font-bold">Inicio</div>
                 </div>
-                <div class="w-10 h-10 rounded-full border border-slate-600 flex items-center justify-center group-hover:border-white group-hover:bg-slate-800 transition-all">→</div>
+                <div class="w-10 h-10 rounded-full border border-slate-600 flex items-center justify-center group-hover:border-white group-hover:bg-slate-800 transition-all">🏠</div>
             </a>
         </div>
 
     </main>
 
     <script>
-        // Configuración Gráfico de Dona Moderno
-        const ctx = document.getElementById('hallucinationChart').getContext('2d');
-        
-        // Gradientes
-        const gradientBlue = ctx.createLinearGradient(0, 0, 0, 400);
-        gradientBlue.addColorStop(0, '#3B82F6');
-        gradientBlue.addColorStop(1, '#1E40AF');
-
-        const gradientPink = ctx.createLinearGradient(0, 0, 0, 400);
-        gradientPink.addColorStop(0, '#EC4899');
-        gradientPink.addColorStop(1, '#BE185D');
-
-        new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Información Verificada', 'Riesgo de Alucinación'],
-                datasets: [{
-                    data: [85, 15],
-                    backgroundColor: [gradientBlue, gradientPink],
-                    borderWidth: 0,
-                    hoverOffset: 10,
-                    borderRadius: 5
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: { display: false },
-                    tooltip: {
-                        backgroundColor: 'rgba(15, 23, 42, 0.9)',
-                        titleColor: '#fff',
-                        bodyColor: '#cbd5e1',
-                        padding: 12,
-                        cornerRadius: 8,
-                        displayColors: true,
-                        callbacks: {
-                            label: function(context) { return context.label + ': ' + context.raw + '%'; }
-                        }
-                    }
-                },
-                cutout: '80%', // Dona delgada estilo moderno
-                animation: {
-                    animateScale: true,
-                    animateRotate: true
-                }
-            }
-        });
-
-        // Función de copiado con feedback visual
         function copyPrompt(btn) {
-            const promptText = "¿Puedes darme la fuente o el enlace de donde sacaste esa información?";
+            const promptText = "Lista los días feriados restantes de este año en Perú y dame el enlace a la fuente oficial de donde sacaste el dato.";
             
             const el = document.createElement('textarea');
             el.value = promptText;
@@ -255,23 +187,20 @@
             document.execCommand('copy');
             document.body.removeChild(el);
 
-            // Efecto visual en el botón
             const contentDiv = btn.querySelector('div');
-            const originalHTML = contentDiv.innerHTML;
+            const copyBtn = contentDiv.querySelector('div:last-child');
+            const originalText = copyBtn.innerHTML;
             
-            contentDiv.classList.remove('bg-slate-900/10');
-            contentDiv.classList.add('bg-green-500', 'text-white');
-            contentDiv.innerHTML = `
-                <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span>¡COPIADO!</span>
-            `;
+            copyBtn.classList.remove('bg-amber-600', 'group-hover:bg-amber-500');
+            copyBtn.classList.add('bg-green-500');
+            copyBtn.innerHTML = `<span>¡LISTO!</span>`;
 
             setTimeout(() => {
-                contentDiv.innerHTML = originalHTML;
-                contentDiv.classList.add('bg-slate-900/10');
-                contentDiv.classList.remove('bg-green-500', 'text-white');
+                copyBtn.innerHTML = originalText;
+                copyBtn.classList.add('bg-amber-600', 'group-hover:bg-amber-500');
+                copyBtn.classList.remove('bg-green-500');
             }, 2500);
         }
-    </script>
+        </script>
 </body>
 </html>
