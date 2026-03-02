@@ -85,8 +85,8 @@
             <!-- Barra de Progreso -->
             <div class="mt-12 max-w-md mx-auto">
                 <div class="flex justify-between text-[10px] font-mono text-cyan-400 mb-2 uppercase tracking-widest">
-                    <span>Semana 1 en curso</span>
-                    <span>5% COMPLETADO</span>
+						<span id="semana-texto">%JS%</span>
+						<span id="porcentaje-texto">%JS%</span>
                 </div>
                 <div class="w-full bg-slate-800 rounded-full h-1 overflow-hidden border border-slate-700">
                     <div class="bg-gradient-to-r from-cyan-500 to-blue-600 h-1 rounded-full shadow-[0_0_10px_#06B6D4]" style="width: 5%"></div>
@@ -97,59 +97,73 @@
 
     <!-- Principios de Uso de la IA -->
 <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-20">
-    <div class="glass-panel rounded-3xl p-8 md:p-12 border border-slate-700 slide-up">
+ 
+
+<div class="glass-panel rounded-3xl p-8 border border-slate-800 bg-slate-900/50 max-w-5xl mx-auto">
+    <h3 class="text-center text-white text-xl font-bold mb-10 tracking-tight">Principios de Uso de la IA</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
         
-        <h2 class="text-xl md:text-2xl font-bold text-white mb-6 text-center tracking-wide">
-            Principios de Uso de la IA
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            
-            <!-- Principio 1 -->
-            <div class="flex gap-4 items-start">
-                <div class="w-10 h-10 rounded-lg bg-cyan-900/40 border border-cyan-500/30 flex items-center justify-center text-xl">
-                    💬
-                </div>
-                <p class="text-slate-300 leading-relaxed">
-                    No existen prompts correctos o incorrectos; existen prompts más claros o más completos.
-                </p>
+        <div class="group flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center transition-all duration-500 group-hover:bg-cyan-500/20">
+                <svg class="w-5 h-5 text-cyan-400 transition-transform duration-500 group-hover:-translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+                </svg>
             </div>
-
-            <!-- Principio 2 -->
-            <div class="flex gap-4 items-start">
-                <div class="w-10 h-10 rounded-lg bg-cyan-900/40 border border-cyan-500/30 flex items-center justify-center text-xl">
-                    🔍
-                </div>
-                <p class="text-slate-300 leading-relaxed">
-                    Verifica siempre la información importante antes de usarla.
-                </p>
-            </div>
-
-            <!-- Principio 3 -->
-            <div class="flex gap-4 items-start">
-                <div class="w-10 h-10 rounded-lg bg-cyan-900/40 border border-cyan-500/30 flex items-center justify-center text-xl">
-                    🧠
-                </div>
-                <p class="text-slate-300 leading-relaxed">
-                    Mientras más contexto brindes, mejor será la respuesta.
-                </p>
-            </div>
-
-            <!-- Principio 4 -->
-            <div class="flex gap-4 items-start">
-                <div class="w-10 h-10 rounded-lg bg-cyan-900/40 border border-cyan-500/30 flex items-center justify-center text-xl">
-                    🤝
-                </div>
-                <p class="text-slate-300 leading-relaxed">
-                    Copilot es una herramienta de apoyo, no reemplaza el criterio humano.
-                </p>
-            </div>
-
+            <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
+                No existen prompts correctos o incorrectos; existen <span class="text-white font-medium">prompts más claros o más completos.</span>
+            </p>
         </div>
+
+        <div class="group flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center transition-all duration-500 group-hover:bg-blue-500/20">
+                <svg class="w-5 h-5 text-blue-400 transition-all duration-700 group-hover:rotate-12 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+            <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
+                <span class="text-white font-medium">Verifica siempre la información</span> importante antes de usarla.
+            </p>
+        </div>
+
+        <div class="group flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center transition-all">
+                <svg class="w-6 h-6 text-[#EC4899] animate-[pulse_4s_ease-in-out_infinite]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+          d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" 
+          opacity="0.5" />
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+          d="M12 11h.01m-2 2h4" />
+</svg>
+            </div>
+            <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
+                Mientras <span class="text-white font-medium">más contexto brindes</span>, mejor será la respuesta.
+            </p>
+        </div>
+
+        <div class="group flex items-start gap-4">
+            <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center transition-all duration-500 group-hover:bg-teal-500/20">
+                <svg class="w-6 h-6 text-teal-400 transition-all duration-500 group-hover:-translate-y-1 group-hover:text-teal-300" 
+     fill="none" 
+     stroke="currentColor" 
+     viewBox="0 0 24 24" 
+     xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+    
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" 
+          d="M13 10V3L4 14h7v7l9-11h-7z" 
+          class="opacity-40" />
+</svg>
+            </div>
+            <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
+                Copilot es una herramienta de apoyo, <span class="text-white font-medium">no reemplaza el criterio humano.</span>
+            </p>
+        </div>
+
     </div>
+</div>
 </section>
-
-
     <!-- Main Grid -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mt-8 relative z-20 pb-24">
         
@@ -181,7 +195,10 @@
                                     <span class="text-[9px] text-green-500 font-mono uppercase">Disponible</span>
                                 </div>
                             </div>
-                            <span class="text-slate-500 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all">→</span>
+                            
+							<svg class="w-6 h-6 text-cyan-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
                         </div>
                     </a>
 
@@ -197,7 +214,9 @@
                                     <span class="text-[9px] text-green-500 font-mono uppercase">Disponible</span>
                                 </div>
                             </div>
-                            <span class="text-slate-500 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all">→</span>
+                            <svg class="w-6 h-6 text-cyan-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
                         </div>
                     </a>
 					
@@ -213,7 +232,9 @@
                                     <span class="text-[9px] text-green-500 font-mono uppercase">Disponible</span>
                                 </div>
                             </div>
-                            <span class="text-slate-500 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all">→</span>
+                            <svg class="w-6 h-6 text-cyan-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
                         </div>
                     </a>
 					
@@ -228,7 +249,9 @@
                                     <span class="text-[9px] text-green-500 font-mono uppercase">Disponible</span>
                                 </div>
                             </div>
-                            <span class="text-slate-500 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all">→</span>
+                            <svg class="w-6 h-6 text-cyan-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
                         </div>
                     </a>
 					
@@ -243,7 +266,9 @@
                                     <span class="text-[9px] text-green-500 font-mono uppercase">Disponible</span>
                                 </div>
                             </div>
-                            <span class="text-slate-500 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all">→</span>
+                            <svg class="w-6 h-6 text-cyan-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
                         </div>
                     </a>
 
@@ -270,7 +295,7 @@
                                         ¡Acepto el Reto!
                                     </p>
                                     <p class="text-slate-400 text-xs mt-1 group-hover:text-white">
-                                        Demuestra tu dominio de la IA en 5 min.
+                                        Demuestra tu dominio de la Semana 1.
                                     </p>
                                 </div>
 
@@ -383,6 +408,52 @@
         }
         if (inputClave.length > 20) inputClave = inputClave.substring(1);
     });
+	
+
+function actualizarProgresoCurso() {
+    // --- CONFIGURACIÓN ---
+    // Ajusta la fecha en que inició el curso (Año, Mes-1, Día)
+    // Ejemplo: Lunes 2 de Marzo de 2026 -> new Date(2026, 2, 2)
+    const fechaInicio = new Date(2026, 2, 2); 
+    const hoy = new Date();
+    
+    // Si hoy es antes de la fecha de inicio, forzamos al Día 1
+    if (hoy < fechaInicio) {
+        document.getElementById('semana-texto').innerText = "Semana 1 en curso";
+        document.getElementById('porcentaje-texto').innerText = "5% COMPLETADO";
+        return;
+    }
+
+    let diasHabilesPasados = 0;
+    let fechaTemp = new Date(fechaInicio);
+
+    // Contar días de Lunes a Viernes desde el inicio hasta hoy
+    while (fechaTemp <= hoy) {
+        const diaSemana = fechaTemp.getDay();
+        if (diaSemana !== 0 && diaSemana !== 6) { // Ignorar Sábado (6) y Domingo (0)
+            diasHabilesPasados++;
+        }
+        fechaTemp.setDate(fechaTemp.getDate() + 1);
+    }
+
+    // --- CÁLCULOS LOGÍSTICOS ---
+    const totalDias = 20;
+    // Nos aseguramos de no pasarnos de 20 y empezar en 1
+    const diaActual = Math.min(Math.max(diasHabilesPasados, 1), totalDias);
+    
+    // Cálculo de la semana: Día 1-5 = Sem 1, Día 6-10 = Sem 2, etc.
+    const numeroSemana = Math.ceil(diaActual / 5);
+    const porcentaje = (diaActual / totalDias) * 100;
+
+    // --- ACTUALIZAR LA INTERFAZ ---
+    document.getElementById('semana-texto').innerText = `Semana ${numeroSemana} en curso`;
+    document.getElementById('porcentaje-texto').innerText = `${porcentaje}% COMPLETADO`;
+}
+
+// Ejecutar al cargar la página
+actualizarProgresoCurso();
+
+
 </script>
 </body>
 </html>
