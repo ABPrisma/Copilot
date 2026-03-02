@@ -264,12 +264,12 @@ function copyPrompt(opcion, btn) {
     if(opcion === 1){
         promptText = `Actúa como asistente organizador.
 
-Estamos organizando el cumpleaños de Juan para 15 personas.
+Estamos organizando el cumpleaños de Juan para 15 personas. 
 El presupuesto total es de S/ 1,200 e incluye: comida, bebidas, decoración y torta.
 
-1) Divide el presupuesto equitativamente.
-2) Propón distribución por categoría.
-3) Presenta una tabla con categoría, monto y cuota individual.`;
+1) Divide el presupuesto equitativamente entre los 15 asistentes.
+2) Propón una distribución estimada del presupuesto por categoría (comida, bebidas, decoración y torta).
+3) Preséntalo en una tabla clara con: categoría, monto asignado y cuota individual.`;
     }
 
     if(opcion === 2){
@@ -283,13 +283,14 @@ Mañana tenemos la reunión de revisión del Proyecto Alpha.
     }
 
     if(opcion === 3){
-        promptText = `Actúa como responsable de operaciones.
+        promptText = `Actúa como líder de proyecto.
 
-Redacta un correo al equipo sobre el orden del almacén.
+Mañana tenemos la reunión de revisión del Proyecto Alpha con el equipo técnico y la gerencia. 
+El proyecto presenta retrasos en el cronograma y dudas sobre el presupuesto.
 
-1) Explica la importancia del orden.
-2) Da 3 reglas claras.
-3) Tono firme pero profesional.`;
+1) Crea una agenda estructurada de 3 puntos clave.
+2) Asigna un tiempo estimado a cada punto (la reunión dura 45 minutos).
+3) Preséntalo en formato de lista numerada con tiempos claros.`;
     }
 
     // COPIAR
