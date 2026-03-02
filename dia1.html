@@ -51,10 +51,10 @@
             <span class="text-sm font-bold text-slate-300 uppercase tracking-wider">Centro de Capacitación en IA</span>
         </a>
         <div class="flex items-center gap-3">
-            <span class="hidden md:inline text-xs text-slate-400 font-mono">SYSTEM: ONLINE</span>
+            <span class="hidden md:inline text-xs text-slate-400 font-mono">MODULE: INTRO</span>
             <div class="bg-cyan-500/20 text-cyan-400 px-4 py-1.5 rounded-full text-xs font-bold border border-cyan-500/30 flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span>
-                Día 1 / 20
+                1 / 20
             </div>
         </div>
     </header>
@@ -68,7 +68,7 @@
             <div class="relative inline-block group">
                 <div class="absolute -inset-1 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-lg blur opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                 <span class="relative inline-block bg-slate-900 text-cyan-300 px-6 py-2 rounded-lg text-sm font-bold uppercase tracking-[0.3em] border border-cyan-500/30">
-                    DÍA 1
+                    ACTIVIDAD 1
                 </span>
             </div>
             
@@ -143,14 +143,25 @@
 
                 <div class="flex flex-col md:flex-row">
                     <!-- Panel Izquierdo -->
-                    <div class="w-full md:w-1/3 bg-slate-800/50 p-8 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-700">
-                        <img src="copilot.svg" 
-                             class="w-32 h-32 mb-6 relative z-10 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]" alt="Teams">
-                        <h3 class="text-xl font-bold text-white text-center">Acción del Día</h3>
-                        <p class="text-sm text-slate-400 text-center mt-2">
-                            Entra a Teams -> Copilot y salúdalo:
-                        </p>
-                    </div>
+<div class="w-full md:w-1/3 bg-slate-800/50 p-8 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-700">
+    <img src="copilot.svg" 
+         class="w-32 h-32 mb-6 relative z-10 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]" alt="Copilot">
+    
+    <h3 class="text-xl font-bold text-white text-center">Acción del Día</h3>
+    
+    <p class="text-sm text-slate-400 text-center mt-3 leading-relaxed">
+        Entra a 
+        <span class="text-white font-semibold">Teams → Copilot</span> 
+        <br>o <br>
+        <a href="https://m365.cloud.microsoft/" target="_blank"
+           class="text-cyan-400 font-semibold 
+                  hover:text-cyan-300 
+                  hover:drop-shadow-[0_0_6px_rgba(34,211,238,0.7)] 
+                  transition duration-300">
+           accede a Copilot web
+        </a>.
+    </p>
+</div>
 
                     <!-- Panel Derecho: Prompt -->
                     <div class="w-full md:w-2/3 p-8 md:p-12 flex flex-col justify-center relative">
@@ -159,22 +170,29 @@
                         <div class="relative z-10">
                             <label class="text-xs font-mono text-cyan-400 mb-2 block">> INPUT COMMAND:</label>
                             <p class="text-xl md:text-2xl font-mono text-white leading-relaxed mb-8">
-                                "Hola, ¿en qué 3 cosas específicas puedes ayudarme hoy en mi oficina?"
+                               Dame 3 formas específicas en las que puedes ayudarme hoy en mis tareas diarias.
                             </p>
                             
                             <button onclick="copyPrompt(this)" class="group relative w-full overflow-hidden rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 p-px font-bold text-white shadow-[0_0_20px_rgba(6,182,212,0.3)] transition-all hover:shadow-[0_0_30px_rgba(6,182,212,0.6)]">
                                 <div class="relative flex items-center justify-center gap-2 bg-slate-900/10 px-6 py-4 transition-all group-hover:bg-transparent">
                                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
-                                    <span>COPIAR SALUDO</span>
+                                    <span>COPIAR PROMT</span>
+									
                                 </div>
                             </button>
+							<div><p class="mt-3 text-xs text-slate-500">💡Copia el prompt, pruébalo y luego modifícalo agregando más contexto.
+Por ejemplo, puedes iniciar con: “Trabajo en el área de …” y volver a probar.</p></div>
                         </div>
+						
                     </div>
                 </div>
             </div>
+				
         </section>
+	
+		
 <!-- Day 1 wrap-up -->
-<div class="mt-16 max-w-3xl mx-auto bg-slate-900 border border-slate-800 rounded-xl p-6">
+<!--div class="mt-16 max-w-3xl mx-auto bg-slate-900 border border-slate-800 rounded-xl p-6">
 
     <h3 class="text-xl font-bold mb-4">
         Ideas clave del Día 1
@@ -203,7 +221,7 @@
         </li>
 
     </ul>
-</div>
+</div-->
 
         <!-- Navegación Footer -->
         <div class="flex justify-between items-center pb-8 pt-4 slide-in delay-300 border-t border-slate-800">
@@ -314,7 +332,7 @@
 
         // Función de copiado con feedback visual
         function copyPrompt(btn) {
-            const promptText = "Hola, ¿en qué 3 cosas específicas puedes ayudarme hoy en mi oficina?";
+            const promptText = "Dame 3 formas específicas en las que puedes ayudarme hoy en mis tareas diarias.";
             
             const el = document.createElement('textarea');
             el.value = promptText;

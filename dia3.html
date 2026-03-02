@@ -48,7 +48,7 @@
             <span class="hidden md:inline text-xs text-slate-400 font-mono">MODULE: PROMPTING_L1</span>
             <div class="bg-purple-600/20 text-purple-400 px-4 py-1.5 rounded-full text-xs font-bold border border-purple-500/30 flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
-                Día 3 / 20
+                3 / 20
             </div>
         </div>
     </header>
@@ -61,7 +61,7 @@
             <div class="relative inline-block group">
                 <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg blur opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                 <span class="relative inline-block bg-slate-900 text-purple-300 px-6 py-2 rounded-lg text-sm font-bold uppercase tracking-[0.3em] border border-purple-500/30">
-                    DÍA 3
+                    ACTIVIDAD 3
                 </span>
             </div>
             
@@ -137,18 +137,19 @@
                             "Oye, necesito el reporte ya. Se han demorado demasiado y esto es inaceptable. Mándalo ahora."
                         </p>
                         
-                        <p class="text-xs text-slate-500 font-mono mb-2 uppercase">Tu Prompt Mágico:</p>
-                        <button onclick="copyPrompt(this)" class="w-full group relative overflow-hidden rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 p-px shadow-lg transition-all hover:shadow-purple-500/25">
-                            <div class="relative bg-slate-900 p-4 rounded-xl flex items-center gap-4 transition-all group-hover:bg-opacity-0 group-hover:text-white">
-                                <div class="flex-1 font-mono text-sm md:text-base text-purple-100 group-hover:text-white">
-                                    "Actúa como un experto en redacción corporativa y ayúdame a suavizar este mensaje: 'Oye, necesito el reporte ya. Se han demorado demasiado...'"
+                        <p class="text-xs text-slate-500 font-mono mb-2 uppercase">🪄 Prompt Mágico:</p>
+                        <button onclick="copyPrompt(this)" class="w-full group relative overflow-hidden rounded-xl bg-purple-800 p-px shadow-lg transition-all hover:shadow-purple-500/25">
+                           <div class="relative bg-slate-900/90 p-6 rounded-xl border border-amber-500/30 flex flex-col md:flex-row items-center gap-4 transition-all group-hover:bg-slate-800">
+                                
+                                <div class="flex-1 font-mono text-sm md:text-base text-purple-100 group-hover:text-white text-left">
+                                    Actúa como un experto en redacción corporativa y ayúdame a suavizar el siguiente mensaje manteniendo la intención, pero con un tono profesional y respetuoso:"Oye, necesito el reporte ya. Se han demorado demasiado y esto es inaceptable. Mándalo ahora."
                                 </div>
-                                <div class="shrink-0 font-bold text-xs uppercase tracking-wider flex items-center gap-2">
-                                    <span class="hidden md:inline">Copiar Prompt</span>
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 01-2-2V4a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V5a2 2 0 01-2-2h-2"></path></svg>
-                                </div>
+                                <div class="bg-purple-600 text-white px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2 group-hover:bg-purple-500 transition-colors">
+                                    <span class="hidden md:inline">Copiar</span>
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg></div>
                             </div>
                         </button>
+						                        <p class="mt-3 text-xs text-slate-500">💡Copia el prompt y pruébalo. Luego cambia el rol (por ejemplo: gerente, jefe de proyecto o consultor) y observa cómo cambia el resultado.</p>
                     </div>
 
                 </div>
@@ -177,7 +178,7 @@
     <script>
         function copyPrompt(btn) {
             // El texto incluye el ejemplo rudo para facilitar la prueba
-            const promptText = "Actúa como un experto en redacción corporativa y ayúdame a suavizar este mensaje: 'Oye, necesito el reporte ya. Se han demorado demasiado y esto es inaceptable. Mándalo ahora.'";
+            const promptText = "Actúa como un experto en redacción corporativa y ayúdame a suavizar el siguiente mensaje manteniendo la intención, pero con un tono profesional y respetuoso: Oye, necesito el reporte ya. Se han demorado demasiado y esto es inaceptable. Mándalo ahora.";
             
             const el = document.createElement('textarea');
             el.value = promptText;
@@ -187,23 +188,18 @@
             document.body.removeChild(el);
 
             const contentDiv = btn.querySelector('div');
+			const copyBtn = contentDiv.querySelector('div:last-child');
             // Guardamos el contenido original
-            const originalHTML = contentDiv.innerHTML;
+            const originalHTML = copyBtn.innerHTML;
             
-            // Cambio visual temporal
-            contentDiv.classList.remove('bg-slate-900');
-            contentDiv.classList.add('bg-green-500', 'text-white'); // Fondo verde sólido
-            contentDiv.innerHTML = `
-                <div class="flex-1 font-bold text-center flex items-center justify-center gap-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    ¡COPIADO AL PORTAPAPELES!
-                </div>
-            `;
+            copyBtn.classList.remove('bg-purple-600', 'group-hover:bg-purple-500');
+            copyBtn.classList.add('bg-green-500');
+            copyBtn.innerHTML = `<span>¡LISTO!</span>`;
 
             setTimeout(() => {
-                contentDiv.innerHTML = originalHTML;
-                contentDiv.classList.add('bg-slate-900');
-                contentDiv.classList.remove('bg-green-500', 'text-white');
+                copyBtn.innerHTML = originalHTML;
+                copyBtn.classList.add('bg-slate-900');
+                copyBtn.classList.remove('bg-green-500', 'text-white');
             }, 2000);
         }
     </script>

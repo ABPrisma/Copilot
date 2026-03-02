@@ -48,7 +48,7 @@
             <span class="hidden md:inline text-xs text-slate-400 font-mono">MODULE: PROMPTING_L2</span>
             <div class="bg-pink-600/20 text-pink-400 px-4 py-1.5 rounded-full text-xs font-bold border border-pink-500/30 flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-pink-500 animate-pulse"></span>
-                Día 4 / 20
+                4 / 20
             </div>
         </div>
     </header>
@@ -61,7 +61,7 @@
             <div class="relative inline-block group">
                 <div class="absolute -inset-1 bg-gradient-to-r from-pink-600 to-rose-600 rounded-lg blur opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                 <span class="relative inline-block bg-slate-900 text-pink-300 px-6 py-2 rounded-lg text-sm font-bold uppercase tracking-[0.3em] border border-pink-500/30">
-                    DÍA 4
+                    ACTIVIDAD 4
                 </span>
             </div>
             <p class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.4em]">El Secreto del Prompt · Parte 2</p>
@@ -118,7 +118,7 @@
                         </div>
                         <p class="text-slate-400 text-sm">"Dame ideas para un evento de fin de año."</p>
                         <div class="mt-2 text-xs bg-slate-800 p-2 rounded text-slate-500">
-                            ↳ Copilot: "Fiesta de disfraces, cena elegante..." (Muy genérico).
+                            ➡️ Copilot: "Fiesta de disfraces, cena elegante..." (Muy genérico).
                         </div>
                     </div>
 
@@ -132,7 +132,7 @@
                             "Dame ideas para un evento de fin de año <span class="text-pink-400">para un equipo de ingenieros introvertidos</span>, que sea <span class="text-pink-400">en horario laboral</span> y que <span class="text-pink-400">fomente el trabajo en equipo sin ser incómodo</span>."
                         </p>
                         <div class="mt-2 text-xs bg-slate-900 p-2 rounded text-pink-200 border border-pink-500/20">
-                            ↳ Copilot: "Torneo de videojuegos retro, Escape Room, Cata de vinos guiada..."
+                            ➡️ Copilot: "Torneo de videojuegos retro, Escape Room, Cata de vinos guiada..."
                         </div>
                     </div>
                 </div>
@@ -141,37 +141,41 @@
         </section>
 
         <section class="slide-in delay-200">
-            <div class="glass-panel rounded-2xl p-1 border border-pink-600/30 relative overflow-hidden">
+		   <div class="glass-panel rounded-2xl p-1 border border-pink-600/30 relative overflow-hidden">
                 <div class="bg-slate-900/95 p-8 md:p-12 text-center rounded-xl relative z-10">
                     
                     <div class="w-16 h-16 bg-pink-500/20 text-pink-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 border border-pink-500/50 shadow-[0_0_20px_rgba(236,72,153,0.3)]">
-                        🚀
+                        🎯
                     </div>
 
-                    <h3 class="text-2xl font-bold text-white mb-2">Misión: El Vendedor Preciso</h3>
+                    <h3 class="text-2xl font-bold text-white mb-2">Misión: El Especialista Preciso</h3>
                     <p class="text-slate-400 mb-8 max-w-2xl mx-auto">
-                        Vamos a pedirle un plan de acción, pero dándole todos los detalles para que no pueda fallar.
+                         Vamos a pedirle recomendaciones concretas para ayudar al equipo, pero dándole todo el contexto necesario para que la respuesta sea realmente útil.
                     </p>
 
                     <div class="max-w-3xl mx-auto relative text-left bg-slate-800/50 rounded-xl p-6 border border-slate-700">
-                        <p class="text-xs text-slate-500 font-mono mb-2 uppercase">Tu Prompt de Hoy:</p>
                         
-                        <div class="bg-slate-900 p-4 rounded-lg border-l-4 border-pink-500 mb-4 text-sm text-slate-300 leading-relaxed">
-                            "Actúa como un experto en Bienestar Laboral. <br>
-                            Dame 3 ideas breves para reducir el estrés del equipo. <br>
-                            <strong class="text-pink-400">CONTEXTO:</strong> Somos un equipo de contadores en cierre de mes, trabajamos remoto y tenemos muy poco tiempo libre."
-                        </div>
-
+                        
+                         <p class="text-xs text-slate-500 font-mono mb-2 uppercase">🛠 Tu Prompt:</p>
                         <button onclick="copyPrompt(this)" class="w-full group relative overflow-hidden rounded-xl bg-gradient-to-r from-pink-600 to-rose-600 p-px shadow-lg transition-all hover:shadow-pink-500/25">
-                            <div class="relative bg-slate-900 p-4 rounded-xl flex items-center justify-center gap-2 transition-all group-hover:bg-opacity-0 group-hover:text-white">
-                                <span class="font-bold text-sm uppercase tracking-wider">COPIAR PROMPT AL PORTAPAPELES</span>
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                           <div class="relative bg-slate-900/90 p-6 rounded-xl border border-amber-500/30 flex flex-col md:flex-row items-center gap-4 transition-all group-hover:bg-slate-800">
+                                
+                                <div class="flex-1 font-mono text-sm md:text-base text-pink-100 group-hover:text-white text-left">
+                                 Actúa como un experto en bienestar laboral. <br>
+                            Dame 3 ideas breves y prácticas para reducir el estrés del equipo. <br>
+                            <strong class="text-pink-400">CONTEXTO:</strong> Somos un equipo de contadores en cierre de mes, trabajamos de forma remota y tenemos muy poco tiempo libre.</div>
+                                <div class="bg-pink-600 text-white px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2 group-hover:bg-pink-500 transition-colors">
+                                    <span class="hidden md:inline">Copiar</span>
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg></div>
                             </div>
                         </button>
+						                        <p class="mt-3 text-xs text-slate-500">💡Agrega más detalles al contexto y adáptalo a tu propia área o realidad laboral. Verás cómo las recomendaciones se vuelven más específicas y útiles.</p>
                     </div>
 
                 </div>
             </div>
+			
+
         </section>
 
         <div class="flex justify-between items-center pb-8 pt-4 slide-in delay-300 border-t border-slate-800 mt-12">
@@ -195,9 +199,9 @@
 
     <script>
         function copyPrompt(btn) {
-            const promptText = "Actúa como un experto en Bienestar Laboral. Dame 3 ideas breves para reducir el estrés del equipo. CONTEXTO: Somos un equipo de contadores en cierre de mes, trabajamos remoto y tenemos muy poco tiempo libre.";
+            const promptText = "Actúa como un experto en bienestar laboral. Dame 3 ideas breves y prácticas para reducir el estrés del equipo. CONTEXTO: Somos un equipo de contadores en cierre de mes, trabajamos de forma remota y tenemos muy poco tiempo libre.";
             
-            const el = document.createElement('textarea');
+      const el = document.createElement('textarea');
             el.value = promptText;
             document.body.appendChild(el);
             el.select();
@@ -205,19 +209,18 @@
             document.body.removeChild(el);
 
             const contentDiv = btn.querySelector('div');
-            const originalHTML = contentDiv.innerHTML;
+			const copyBtn = contentDiv.querySelector('div:last-child');
+            // Guardamos el contenido original
+            const originalHTML = copyBtn.innerHTML;
             
-            contentDiv.classList.remove('bg-slate-900');
-            contentDiv.classList.add('bg-green-500', 'text-white');
-            contentDiv.innerHTML = `
-                <span class="font-bold text-sm uppercase tracking-wider">¡LISTO! PEGAR EN TEAMS</span>
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-            `;
+            copyBtn.classList.remove('bg-pink-600', 'group-hover:bg-pink-500');
+            copyBtn.classList.add('bg-green-500');
+            copyBtn.innerHTML = `<span>¡LISTO!</span>`;
 
             setTimeout(() => {
-                contentDiv.innerHTML = originalHTML;
-                contentDiv.classList.add('bg-slate-900');
-                contentDiv.classList.remove('bg-green-500', 'text-white');
+                copyBtn.innerHTML = originalHTML;
+                copyBtn.classList.add('bg-slate-900');
+                copyBtn.classList.remove('bg-green-500', 'text-white');
             }, 2000);
         }
     </script>
