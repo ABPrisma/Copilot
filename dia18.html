@@ -97,96 +97,133 @@
             </p>
         </section>
 
-        <section class="slide-in delay-100 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            
-            <div class="glass-panel p-8 rounded-3xl border-l-4 border-orange-500 relative overflow-hidden">
-                <div class="absolute top-0 right-0 p-4 opacity-10 text-9xl">🎨</div>
-                <h2 class="text-2xl font-bold text-white mb-4">El fin de las fotos genéricas</h2>
-                <p class="text-slate-300 leading-relaxed mb-6">
-                    Pasas horas buscando en bancos de imágenes esa foto perfecta para tu presentación, pero todas se ven actuadas, tienen marcas de agua, no cuadran con tus colores o simplemente no transmiten el mensaje correcto.
-                </p>
-                <p class="text-slate-300 leading-relaxed border-t border-slate-700 pt-4">
-                    <span class="text-orange-400 font-bold">💡 Solución: El Diseño Intencional.</span> Deja de buscar y empieza a crear. Pídele a Copilot la imagen exacta que necesitas dictándole los 3 pilares clave: <strong class="text-white">Estilo + Contenido + Uso</strong>.
-                </p>
+        <section class="slide-in delay-100">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-white mb-4">Los 3 Pilares del Prompt Visual</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Para que una IA te dé una imagen que sirva en el entorno profesional, no basta con pedir "una foto de gente trabajando". Necesitas definir estos tres elementos clave:</p>
             </div>
 
-            <div class="relative">
-                <div class="glass-panel p-6 rounded-2xl border border-slate-500/30 mb-4 transform -rotate-2 opacity-80">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-xs font-mono text-rose-400 font-bold tracking-wide">👉 BÚSQUEDA MANUAL:</span>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-panel p-6 rounded-2xl border-t-4 border-t-orange-500 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center text-2xl mb-4 border border-orange-500/50 text-orange-400">🎨</div>
+                    <h3 class="text-xl font-bold text-white mb-2">1. Estilo</h3>
+                    <p class="text-sm text-slate-400 mb-4">Define cómo se verá la imagen. Evita que la IA adivine y te dé un dibujo animado cuando querías algo serio.</p>
+                    <div class="bg-slate-900/80 p-3 rounded border border-slate-700/50 text-xs text-orange-300 font-mono">
+                        Ej: Fotografía realista, ilustración 3D corporativa, diseño vectorial plano, acuarela.
                     </div>
-                    <p class="text-slate-300 text-sm italic leading-relaxed">
-                        Buscar "gente feliz en oficina" en Google, descargar una foto pixelada que no combina con los colores de tu empresa y que no encaja bien en la portada de tu documento.
-                    </p>
                 </div>
 
-                <div class="glass-panel p-6 rounded-2xl border border-orange-500/50 transform rotate-1 bg-slate-800 relative z-10">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-xs font-mono text-orange-400 font-bold">✅ CREACIÓN A MEDIDA:</span>
+                <div class="glass-panel p-6 rounded-2xl border-t-4 border-t-red-500 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center text-2xl mb-4 border border-red-500/50 text-red-400">📌</div>
+                    <h3 class="text-xl font-bold text-white mb-2">2. Contenido</h3>
+                    <p class="text-sm text-slate-400 mb-4">Lo que está pasando en la escena. Sujeto, acción, colores predominantes y tipo de iluminación.</p>
+                    <div class="bg-slate-900/80 p-3 rounded border border-slate-700/50 text-xs text-red-300 font-mono">
+                        Ej: Un equipo en campo analizando planos, luz cálida de atardecer, tonos azules y verdes.
                     </div>
-                    <ul class="text-slate-300 text-sm space-y-2">
-                        <li><strong class="text-white">🎨 Estilo:</strong> "Ilustración digital moderna".</li>
-                        <li><strong class="text-white">📌 Contenido:</strong> "Equipo en mesa de trabajo (tonos azules)".</li>
-                        <li><strong class="text-white">🎯 Uso:</strong> "Para portada de informe".</li>
-                    </ul>
-                    <div class="mt-3 flex items-center gap-2 text-orange-400 text-sm font-bold">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                        Impacto Visual Directo
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border-t-4 border-t-pink-500 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 rounded-full bg-pink-500/20 flex items-center justify-center text-2xl mb-4 border border-pink-500/50 text-pink-400">🎯</div>
+                    <h3 class="text-xl font-bold text-white mb-2">3. Uso (El secreto)</h3>
+                    <p class="text-sm text-slate-400 mb-4">Para qué necesitas la imagen. Esto le dice a la IA cómo encuadrar y organizar los elementos visuales.</p>
+                    <div class="bg-slate-900/80 p-3 rounded border border-slate-700/50 text-xs text-pink-300 font-mono">
+                        Ej: Para portada de informe (deja espacio arriba), para banner horizontal, fondo minimalista para PPT.
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="slide-in delay-200">
-            <div class="glass-panel rounded-2xl p-1 border border-orange-600/30 relative overflow-hidden tech-stripe">
-                <div class="bg-slate-900/95 p-8 md:p-12 text-center rounded-xl relative z-10">
-                    
-                    <div class="w-16 h-16 bg-orange-500/20 text-orange-400 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 border border-orange-500/50 shadow-[0_0_20px_rgba(249,115,22,0.2)]">
-                        🖼️
-                    </div>
-
-                    <h3 class="text-2xl font-bold text-white mb-2">Misión: El Director de Arte</h3>
-                    <p class="text-orange-400 font-bold text-sm mb-2">
-                        ⚡ Vamos a diseñar la portada de nuestro reporte en 10 segundos.
-                    </p>
-                    <p class="text-slate-400 mb-8 max-w-2xl mx-auto text-sm">
-                        Copia este prompt y pégalo en Copilot. Fíjate cómo le damos directrices clarísimas sobre lo que queremos ver y para qué lo vamos a usar.
-                    </p>
-
-                    <div class="max-w-3xl mx-auto relative">
-                        <button onclick="copyPrompt(this)" class="w-full group relative overflow-hidden rounded-xl bg-slate-800 p-px transition-all hover:shadow-[0_0_30px_rgba(249,115,22,0.4)]">
-                            <div class="relative bg-slate-900/90 p-6 rounded-xl border border-orange-500/30 flex flex-col items-center gap-6 transition-all group-hover:bg-slate-800">
-                                
-                                <div class="w-full text-left font-mono text-sm text-orange-100 leading-relaxed">
-                                    <span class="text-orange-400 font-bold">Genera una imagen</span> de estilo ilustración digital moderna.<br><br>
-                                    
-                                    <span class="text-orange-400 font-bold">Contenido:</span> un equipo de profesionales colaborando en una mesa de trabajo.<br>
-                                    <span class="text-orange-400 font-bold">Colores:</span> azul marino y blanco.<br>
-                                    <span class="text-orange-400 font-bold">Ambiente:</span> oficina moderna, iluminada.<br><br>
-                                    
-                                    <span class="text-orange-400 font-bold">Uso:</span> Es para la portada de un informe ejecutivo, así que deja un espacio limpio y despejado en la parte superior para luego poder escribir el título encima.
-                                </div>
-                                
-                                <div class="bg-orange-600 text-white px-8 py-3 rounded-lg font-bold text-sm flex items-center justify-center gap-2 group-hover:bg-orange-500 transition-colors w-full md:w-auto mt-2 shadow-lg">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
-                                    COPIAR PROMPT
-                                </div>
-                            </div>
-                        </button>
-                        
-                       <div class="mt-8 text-left bg-gradient-to-r from-orange-900/40 to-slate-800 p-6 rounded-xl border border-orange-500/30">
-                            <div class="flex items-center gap-2 mb-4">
-                                <span class="text-2xl">🪄</span>
-                                <h4 class="text-orange-300 font-bold uppercase tracking-widest text-sm">El Secreto Pro: Modifica el "Mood"</h4>
-                            </div>
-                            <p class="text-sm text-slate-300 mb-4">La primera imagen casi nunca es la definitiva. Una vez que la genere, puedes pedirle que cambie la emoción o el tono de la escena sin perder el estilo original. Prueba respondiéndole esto:</p>
-                            
-                            <div class="bg-slate-900/80 p-5 rounded-lg border border-slate-700 hover:border-orange-500/50 transition-colors shadow-lg">
-                                <p class="text-sm text-orange-400 font-mono italic">"Ajusta la imagen para que tenga un tono más cálido y transmite una sensación clara de logro y celebración por parte del equipo."</p>
-                            </div>
+<section class="slide-in delay-200">
+            <div class="bg-gradient-to-r from-red-900/30 to-slate-800 border border-red-500/40 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start shadow-[0_0_30px_rgba(220,38,38,0.1)]">
+                <div class="w-16 h-16 shrink-0 rounded-full bg-red-500/20 border border-red-500/50 flex items-center justify-center text-3xl">⚠️</div>
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold text-white mb-2">Antes de crear tu imagen… evita estas trampas clásicas</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-4">Los modelos de imagen (como DALL-E en Copilot) son poderosos, pero tienen puntos ciegos. Conocerlos te ahorra frustraciones.:</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs mb-6">
+                        <div class="bg-slate-900/60 p-3 rounded border border-slate-700">
+                            <strong class="text-red-400 block mb-1">📝 El Texto Rebelde</strong>
+                            Pedir palabras dentro de la imagen es como pedirle a un gato que escriba un correo: algo sale… pero no lo que esperas.
+                        </div>
+                        <div class="bg-slate-900/60 p-3 rounded border border-slate-700">
+                            <strong class="text-red-400 block mb-1">🧟 El Efecto Multitud Zombie</strong>
+                            Si pides “muchas personas”, las del fondo pueden parecer salidas de una película rara 👀.
+                        </div>
+                        <div class="bg-slate-900/60 p-3 rounded border border-slate-700">
+                            <strong class="text-red-400 block mb-1">🎯 El Francotirador Fallido</strong>
+                            Si pides algo demasiado específico (logos exactos, banderas perfectas, objetos técnicos), la IA empieza a improvisar… y no siempre acierta.
                         </div>
                     </div>
+                    
+                    <div class="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 flex gap-3 items-start">
+                        <span class="text-xl mt-0.5">🚀</span>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            <strong class="text-blue-400 font-bold block mb-1">La buena noticia: Esto es temporal.</strong>
+                            La Inteligencia Artificial está en constante evolución. Los modelos visuales se actualizan continuamente. Lo que hoy es un texto borroso o un rostro extraño, en la próxima actualización probablemente ya estará resuelto. <strong class="text-white">¡No dejes de experimentar!</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="slide-in delay-200">
+            <div class="glass-panel rounded-2xl p-1 border border-orange-600/30 relative overflow-hidden tech-stripe">
+                <div class="bg-slate-900/95 p-8 md:p-12 rounded-xl relative z-10">
+                    
+                    <div class="text-center mb-10">
+                        <div class="w-16 h-16 bg-orange-500/20 text-orange-400 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 border border-orange-500/50 shadow-[0_0_20px_rgba(249,115,22,0.2)]">
+                            🚀
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Misión: Casos de Uso en PRISMA</h3>
+                        <p class="text-slate-400 text-sm">Prueba estos 3 escenarios reales copiando los prompts en Copilot. Observa cómo aplicamos los 3 pilares de forma estructurada.</p>
+                    </div>
 
+                    <div class="space-y-6 max-w-4xl mx-auto">
+                        
+                        <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 hover:border-orange-500/50 transition-colors group flex flex-col md:flex-row gap-6 items-center">
+                            <div class="w-12 h-12 rounded-lg bg-orange-900/30 border border-orange-500/30 flex items-center justify-center text-2xl shrink-0">📊</div>
+                            <div class="flex-1 text-left">
+                                <h4 class="text-white font-bold text-sm mb-2">Caso 1: Portada para Informe de Impacto</h4>
+                                <p class="text-orange-100 font-mono text-xs leading-relaxed">
+                                    <span class="text-orange-400 font-bold">[Estilo]</span> Fotografía hiperrealista estilo documental.<br>
+                                    <span class="text-orange-400 font-bold">[Contenido]</span> Una especialista de campo con chaleco corporativo conversando amablemente con un agricultor local en un cultivo verde. Luz de atardecer cálida. Colores tierra y verde predominantes.<br>
+                                    <span class="text-orange-400 font-bold">[Uso]</span> Es para la portada vertical de un informe de sostenibilidad, deja el tercio superior despejado (cielo o desenfoque) para poder añadir yo el título después.
+                                </p>
+                            </div>
+                            <button onclick="copiarPaso(this, 1)" class="shrink-0 bg-slate-700 text-slate-200 px-6 py-3 rounded-lg font-bold text-xs hover:bg-orange-600 hover:text-white transition-all w-full md:w-auto">
+                                COPIAR
+                            </button>
+                        </div>
+
+                        <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 hover:border-orange-500/50 transition-colors group flex flex-col md:flex-row gap-6 items-center">
+                            <div class="w-12 h-12 rounded-lg bg-orange-900/30 border border-orange-500/30 flex items-center justify-center text-2xl shrink-0">✉️</div>
+                            <div class="flex-1 text-left">
+                                <h4 class="text-white font-bold text-sm mb-2">Caso 2: Banner para Comunicado Interno</h4>
+                                <p class="text-orange-100 font-mono text-xs leading-relaxed">
+                                    <span class="text-orange-400 font-bold">[Estilo]</span> Ilustración 3D moderna estilo corporativo (tipo clay render).<br>
+                                    <span class="text-orange-400 font-bold">[Contenido]</span> Un buzón de sugerencias brillante rodeado de íconos de mensajes flotantes y focos de ideas. Colores azul marino y naranja vibrante. Sin ningún tipo de texto escrito.<br>
+                                    <span class="text-orange-400 font-bold">[Uso]</span> Formato ancho (16:9) para ser utilizado como banner de cabecera en un correo electrónico enviado a todo el personal.
+                                </p>
+                            </div>
+                            <button onclick="copiarPaso(this, 2)" class="shrink-0 bg-slate-700 text-slate-200 px-6 py-3 rounded-lg font-bold text-xs hover:bg-orange-600 hover:text-white transition-all w-full md:w-auto">
+                                COPIAR
+                            </button>
+                        </div>
+
+                        <div class="bg-slate-800/80 p-6 rounded-xl border border-slate-700 hover:border-orange-500/50 transition-colors group flex flex-col md:flex-row gap-6 items-center">
+                            <div class="w-12 h-12 rounded-lg bg-orange-900/30 border border-orange-500/30 flex items-center justify-center text-2xl shrink-0">🎓</div>
+                            <div class="flex-1 text-left">
+                                <h4 class="text-white font-bold text-sm mb-2">Caso 3: Diapositiva para Capacitación</h4>
+                                <p class="text-orange-100 font-mono text-xs leading-relaxed">
+                                    <span class="text-orange-400 font-bold">[Estilo]</span> Diseño vectorial plano (flat design minimalista).<br>
+                                    <span class="text-orange-400 font-bold">[Contenido]</span> Un equipo de tres profesionales organizando cajas y gráficos en un almacén. Colores corporativos sobrios. Fondo color crema muy claro.<br>
+                                    <span class="text-orange-400 font-bold">[Uso]</span> Para ilustrar una presentación de PowerPoint sobre "Nuevos Procesos Logísticos". Sitúa a los personajes a la izquierda para que yo pueda poner el texto a la derecha.
+                                </p>
+                            </div>
+                            <button onclick="copiarPaso(this, 3)" class="shrink-0 bg-slate-700 text-slate-200 px-6 py-3 rounded-lg font-bold text-xs hover:bg-orange-600 hover:text-white transition-all w-full md:w-auto">
+                                COPIAR
+                            </button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -194,7 +231,7 @@
         <div class="slide-in delay-300 flex flex-col items-center justify-center mt-6 mb-4">
             <p class="text-xs text-slate-400 mb-3 text-center">
                💡 <span class="font-bold text-slate-300">Recuerda:</span>
-               Puedes usar Copilot desde <span class="text-orange-400 font-bold">Microsoft Teams → Copilot</span> o abrirlo desde la web.
+               Pídele estas imágenes a <span class="text-orange-400 font-bold">Microsoft Teams → Copilot</span>.
             </p>
             <a href="https://m365.cloud.microsoft/" target="_blank" class="group relative inline-flex items-center justify-center px-6 py-2.5 text-xs font-bold text-orange-100 transition-all duration-300 bg-slate-800/80 border border-orange-500/30 rounded-full hover:bg-orange-600 hover:text-white hover:border-orange-400 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
                 <img src="copilot.svg" class="w-5 h-5 mr-3 relative z-10 drop-shadow-[0_0_15px_rgba(253,186,116,0.5)]" alt="Copilot">
@@ -224,8 +261,14 @@
     </main>
 
     <script>
-        function copyPrompt(btn) {
-            const promptText = "Genera una imagen de estilo ilustración digital moderna.\n\nContenido: un equipo de profesionales colaborando en una mesa de trabajo.\nColores: azul marino y blanco.\nAmbiente: oficina moderna, iluminada.\n\nUso: Es para la portada de un informe ejecutivo, así que deja un espacio limpio y despejado en la parte superior para luego poder escribir el título encima.";
+        const prompts = {
+            1: "Fotografía hiperrealista estilo documental.\nUna especialista de campo con chaleco corporativo conversando amablemente con un agricultor local en un cultivo verde. Luz de atardecer cálida. Colores tierra y verde predominantes.\nEs para la portada vertical de un informe de sostenibilidad, deja el tercio superior despejado (cielo o desenfoque) para poder añadir yo el título después.",
+            2: "Ilustración 3D moderna estilo corporativo (tipo clay render).\nUn buzón de sugerencias brillante rodeado de íconos de mensajes flotantes y focos de ideas. Colores azul marino y naranja vibrante. Sin ningún tipo de texto escrito.\nFormato ancho (16:9) para ser utilizado como banner de cabecera en un correo electrónico enviado a todo el personal.",
+            3: "Diseño vectorial plano (flat design minimalista).\nUn equipo de tres profesionales organizando cajas y gráficos en un almacén. Colores corporativos sobrios. Fondo color crema muy claro.\nPara ilustrar una presentación de PowerPoint sobre 'Nuevos Procesos Logísticos'. Sitúa a los personajes a la izquierda para que yo pueda poner el texto a la derecha."
+        };
+
+        function copiarPaso(btn, pasoNum) {
+            const promptText = prompts[pasoNum];
             
             const el = document.createElement('textarea');
             el.value = promptText;
@@ -234,19 +277,21 @@
             document.execCommand('copy');
             document.body.removeChild(el);
 
-            const contentDiv = btn.querySelector('div');
-            const copyBtn = contentDiv.querySelector('div:last-child');
-            const originalText = copyBtn.innerHTML;
+            const originalText = btn.innerHTML;
             
-            copyBtn.classList.remove('bg-orange-600', 'group-hover:bg-orange-500');
-            copyBtn.classList.add('bg-green-500', 'text-white');
-            copyBtn.innerHTML = `<span>✅ ¡COPIADO AL PORTAPAPELES!</span>`;
+            // Quitar estilos base
+            btn.classList.remove('bg-slate-700', 'text-slate-200', 'hover:bg-orange-600', 'hover:text-white');
+            // Añadir estilos de éxito
+            btn.classList.add('bg-green-500', 'text-white', 'border-green-500');
+            btn.innerHTML = `✅ ¡COPIADO!`;
 
             setTimeout(() => {
-                copyBtn.innerHTML = originalText;
-                copyBtn.classList.add('bg-orange-600', 'group-hover:bg-orange-500');
-                copyBtn.classList.remove('bg-green-500');
-            }, 2500);
+                btn.innerHTML = originalText;
+                btn.classList.remove('bg-green-500', 'text-white', 'border-green-500');
+                
+                // Restaurar estilos base
+                btn.classList.add('bg-slate-700', 'text-slate-200', 'hover:bg-orange-600', 'hover:text-white');
+            }, 2000);
         }
     </script>
 </body>
