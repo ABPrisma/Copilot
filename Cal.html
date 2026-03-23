@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Calendario Gótico 2026 - Perú</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=UnifrakturMaguntia&display=swap');
+  
+  body {
+    background-color: #f4f1ea; /* Fondo claro tipo pergamino / hueso */
+    color: #1a1a1a;
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .a4-container {
+    width: 210mm;
+    height: 297mm;
+    background: #f4f1ea;
+    box-sizing: border-box;
+    padding: 15mm 20mm;
+    border: 3px double #2c2b29;
+    position: relative;
+  }
+  
+  /* Ornamentos en las esquinas */
+  .a4-container::before, .a4-container::after {
+    content: "✠";
+    position: absolute;
+    font-size: 24px;
+    color: #2c2b29;
+  }
+  .a4-container::before { top: 10px; left: 15px; }
+  .a4-container::after { top: 10px; right: 15px; }
+  
+  .bottom-ornaments::before, .bottom-ornaments::after {
+    content: "✠";
+    position: absolute;
+    font-size: 24px;
+    color: #2c2b29;
+  }
+  .bottom-ornaments::before { bottom: 10px; left: 15px; }
+  .bottom-ornaments::after { bottom: 10px; right: 15px; }
+
+  h1 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    text-align: center;
+    font-size: 3.5em;
+    margin: 0 0 25px 0;
+    color: #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px 25px;
+    height: 85%;
+  }
+  
+  .month-container {
+    text-align: center;
+  }
+  
+  .month-title {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 1.4em;
+    margin-bottom: 8px;
+    color: #2c2b29;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8em;
+  }
+  
+  th {
+    font-weight: 700;
+    border-bottom: 1px solid #a8a090;
+    padding-bottom: 4px;
+    color: #4a453d;
+  }
+  
+  td {
+    padding: 3px 0;
+    color: #1a1a1a;
+  }
+  
+  /* Clase para los días feriados (Rojo carmesí oscuro) */
+  .holiday {
+    color: #8a0303;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px rgba(138, 3, 3, 0.3);
+  }
+  
+  /* Ajustes para impresión perfecta */
+  @media print {
+    @page {
+      size: A4;
+      margin: 0;
+    }
+    body {
+      background-color: white;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .a4-container {
+      border: 3px double #2c2b29;
+      margin: 0 auto;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="a4-container">
+    <div class="bottom-ornaments"></div>
+    <h1>~ 2026 ~</h1>
+    <div class="calendar-grid" id="calendar"></div>
+  </div>
+
+  <script>
+    const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    const days = ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'];
+    
+    // Feriados oficiales en Perú para 2026 (meses indexados desde 0)
+    const holidays = {
+      0: [1],             // 1 Ene: Año Nuevo
+      3: [2, 3],          // 2 y 3 Abr: Jueves y Viernes Santo
+      4: [1],             // 1 May: Día del Trabajo
+      5: [7, 29],         // 7 Jun: Batalla de Arica, 29 Jun: San Pedro y San Pablo
+      6: [23, 28, 29],    // 23 Jul: Día de la Fuerza Aérea, 28 y 29 Jul: Fiestas Patrias
+      7: [6, 30],         // 6 Ago: Batalla de Junín, 30 Ago: Santa Rosa de Lima
+      9: [8],             // 8 Oct: Combate de Angamos
+      10: [1],            // 1 Nov: Día de Todos los Santos
+      11: [8, 9, 25]      // 8 Dic: Inmaculada Concepción, 9 Dic: Batalla de Ayacucho, 25 Dic: Navidad
+    };
+
+    const calendarEl = document.getElementById('calendar');
+
+    for (let month = 0; month < 12; month++) {
+      const firstDay = new Date(2026, month, 1).getDay();
+      const daysInMonth = new Date(2026, month + 1, 0).getDate();
+
+      let html = `<div class="month-container"><div class="month-title">† ${months[month]} †</div><table><tr>`;
+      for (let d of days) html += `<th>${d}</th>`;
+      html += `</tr><tr>`;
+
+      let dayOfWeek = 0;
+      for (let i = 0; i < firstDay; i++) {
+        html += `<td></td>`;
+        dayOfWeek++;
+      }
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        if (dayOfWeek === 7) {
+          html += `</tr><tr>`;
+          dayOfWeek = 0;
+        }
+        
+        // Verificar si el día actual es feriado
+        const isHoliday = holidays[month] && holidays[month].includes(day);
+        const tdClass = isHoliday ? 'class="holiday"' : '';
+        
+        html += `<td ${tdClass}>${day}</td>`;
+        dayOfWeek++;
+      }
+
+      while (dayOfWeek < 7) {
+        html += `<td></td>`;
+        dayOfWeek++;
+      }
+      html += `</tr></table></div>`;
+      calendarEl.innerHTML += html;
+    }
+  </script>
+</body>
+</html>
